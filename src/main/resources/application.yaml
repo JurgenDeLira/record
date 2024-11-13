@@ -1,0 +1,19 @@
+quarkus:
+  datasource:
+    reactive:
+      url: "postgresql://localhost:5432/record"
+      username: "John Doe"
+      password: "hola123"
+      pool:
+        max-size: 20
+  hibernate-orm:
+    database:
+      generation: drop-and-create
+  security:
+    oauth2:
+      enabled: true
+  openapi:
+    path: "/openapi"
+    version: "3.0.3"
+  swagger-ui:
+    path: "/swagger-ui"
